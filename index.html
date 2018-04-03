@@ -12,8 +12,8 @@
   <title>Ping Pong</title>
 
   <style>
-    body {
-      background-image: url("images/landing2.jpg");
+  .output {
+      background-image: url("images/landing3.jpg");
       background-color: #cccccc;
     }
   </style>
@@ -22,18 +22,31 @@
 
 <body>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="heading">
+      <div class="jumbotron">
         <img src="images/logo.jpg">
-      <h1></h1>
+
+<h1>Let's play!</h1>
+<h3>Rules:</h3>
+
+<p>Ping Pong will count up to you number from 1 with the following excemptions:
+<ol>
+<li>Numbers divisible by 3 become 'ping'<L1>
+<li>Numbers divisible by 5 become 'pong'<L1>
+<li>Numbers divisible by both 3 and 5 become 'pingpong'<L1>
+  </p>
+
 
       <form id="ping-pong-form">
-        <label for="goal">Enter a number:</label>
+        <label for="goal"><strong>Enter your number here:</strong></label>
         <input id="goal" type="number">
-        <button type="submit">Submit</button>
+        <div class="button">Lets' ping-pong it!!</button></div>
       </form>
+    </div>
 
-      <ul id="solution"></ul>
+<div class="output">
+      <ol id="solution"></ol>
     </div>
   </div>
 </body>
